@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+import requests
 #from snowflake.snowpark.context import get_active_session
 
 # Write directly to the app
@@ -43,4 +44,4 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
         st.success(f'Your order is placed, {name_on_order}!',icon="✅")
 
-import requests
+
